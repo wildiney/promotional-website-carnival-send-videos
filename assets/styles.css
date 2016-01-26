@@ -1,0 +1,49 @@
+html { 
+  background: url(/assets/img/background01.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
+    background-color: transparent;
+}
+h1{
+    font-family: Arial;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 2em;
+    color: #e92076;
+}
+h2{
+    font-weight: bold;
+    font-size:1.2em;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+legend{
+    font-size:1.2em;
+    font-weight: bold;
+    margin-top:20px;
+}
+.container{
+    background-color:#fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+.error{
+    color: red;
+}
+a[href^="tel:"]:before {
+    content: "\2706";
+    display: inline-block;
+    margin-right: 0.5em;
+}
+a[href^="mailto:"]:before {
+    content: "\2709";
+    display: inline-block;
+    margin-right: 0.5em;
+}
