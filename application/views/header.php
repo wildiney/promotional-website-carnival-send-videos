@@ -48,13 +48,13 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="<?php echo (uri_string() == base_url()) ? "active" : ""; ?>"><a href="<?php echo base_url(); ?>"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
-                            <li class="<?php echo (uri_string() == "/upload") ? "active" : ""; ?>"><a href="<?php echo base_url('concurso/regulamento'); ?>"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Regulamento</a></li>
-                            <li class="<?php echo (uri_string() == "/upload") ? "active" : ""; ?>"><a href="<?php echo base_url('upload'); ?>"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Participar</a></li>
-                            <li class="<?php echo (uri_string() == "/contato") ? "active" : ""; ?>"><a href="<?php echo base_url('contato'); ?>"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
+                            <li class="<?php echo (uri_string() == base_url()) ? "active" : ""; ?>"><a href="/marchinhasdaindra"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+                            <li class="<?php echo (uri_string() == "/upload") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/concurso/regulamento"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Regulamento</a></li>
+                            <li class="<?php echo (uri_string() == "/upload") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/upload"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Participar</a></li>
+                            <li class="<?php echo (uri_string() == "/contato") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/contato"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class=""><a href="<?php echo base_url('login/logout'); ?>">Logout</a></li>
+                            <li class=""><a href="/marchinhasdaindra/index.php/login/logout">Logout</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
@@ -62,7 +62,7 @@
         <?php endif; ?>
         <div class="container">
             <div class="row">
-                <a href="<?php echo base_url(); ?>"><?php echo img('/assets/img/header.jpg'); ?></a>
+                <a href="<?php echo base_url(); ?>"><?php echo img('assets/img/header.jpg'); ?></a>
             </div>
         </div>
         <div class="container">

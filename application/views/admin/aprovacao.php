@@ -25,8 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </p>
                     <p><strong style="text-transform: uppercase;"><?php echo $video->title; ?></strong></p>
                     <textarea rows="7" class="form-control"><?php echo $video->lyric; ?></textarea>
-                    <a class="btn btn-success" href="<?php echo base_url("/admin/aprovacao/aprovar/" . $video->iduploads);?>">APROVAR</a> 
-                    <a class="btn btn-danger" href="<?php echo base_url("/admin/aprovacao/reprovar/" . $video->iduploads);?>">REPROVAR</a>
+                    <a class="btn btn-success" href="<?php echo base_url("/index.php/aprovacao/aprovar/" . $video->iduploads);?>">APROVAR</a> 
+                    <a class="btn btn-danger" href="<?php echo base_url("/index.php/aprovacao/reprovar/" . $video->iduploads);?>">REPROVAR</a>
                     
                 </td>
                 <td>

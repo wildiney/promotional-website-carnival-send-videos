@@ -12,7 +12,10 @@
  * @author wfpimentel
  */
 class login_model extends CI_model {
-
+    
+    /**
+     * Método __construct
+     */
     public function __construct() {
         parent::__construct();
     }

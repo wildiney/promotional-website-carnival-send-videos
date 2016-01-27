@@ -10,7 +10,6 @@ $(document).ready(function(){
             },
             group: {
                 required: true,
-            	minlength: 2
             },
             participant1: "required",
             title:"required",
@@ -31,5 +30,8 @@ $(document).ready(function(){
             file: "Envie seu vídeo para nós!",
             acceptance: "Para participar do concurso é preciso aceitar os termos."
         }
+    });
+    $("#enviar").on("click",function(){
+        $("#enviar").html("AGUARDE...");
     });
 });

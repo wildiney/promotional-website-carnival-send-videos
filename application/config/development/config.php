@@ -23,8 +23,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '/marchinhasdaindra';
-//$config['base_url'] = 'http://localhost:8000';
+//$config['base_url'] = 'http://marchinhasdaindra.com.br';
+$config['base_url'] = 'http://localhost:8000';
 
 /*
 |--------------------------------------------------------------------------
@@ -369,8 +369,8 @@ $config['encryption_key'] = 'encryptionkey#0123';
 |
 */
 $config['sess_driver'] = 'database';
-$config['sess_cookie_name'] = 'cisession';
-$config['sess_expiration'] = 84200;
+$config['sess_cookie_name'] = 'ci_session';
+$config['sess_expiration'] = 7200;
 $config['sess_save_path'] = 'ci_sessions';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;

@@ -11,7 +11,7 @@ $attr_form                  = array('class'=>'form_upload form-horizontal', 'nam
 $attr_label_size            = "<div class='col-sm-9'>";
 $attr_label_size_close      = "</div>";
 
-$form  =  form_open_multipart('http://localhost:8000/index.php/upload/enviar', $attr_form);
+$form  =  form_open_multipart('/upload/enviar', $attr_form);
 
 $form .= form_fieldset('Dados Pessoais');
 $form .= "<div class='form-group'>";
@@ -98,8 +98,9 @@ $form .= form_close();
         <ul>
             <li>Só é permitida a participação de funcionários da Indra</li>
             <li>A participação é limitada a somente um grupo/vídeo</li>
-            <li>O vídeo deverá estar em um dos seguintes formatos: AVI, MOV ou MP4.</li>
+            <li>O vídeo deverá estar no formato: MP4.</li>
             <li>O tamanho máximo do vídeo é de 300MB e a sua duração não pode ser superior a 2 minutos.</li>
+            <li>Aguarde carregar a página de confirmação, dependendo do tamanho do arquivo e da sua conexão pode demorar um pouco.</li>
         </ul>
         <p>Para maiores informações, leia o <a href="<?php echo base_url('concurso/regulamento'); ?>">regulamento</a></p>
     </div>
@@ -116,3 +117,4 @@ $form .= form_close();
         <?php echo $form;?>
     </div>
 </div>
+<div class="modal"><!-- Place at bottom of page --></div>

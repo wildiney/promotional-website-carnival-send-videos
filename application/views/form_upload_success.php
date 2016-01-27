@@ -2,7 +2,7 @@
     <div class="col-md-10 col-md-offset-1">
         <h1>Obrigado pela sua participação!</h1>
         <p>O seu vídeo irá para avaliação e em seguida será publicado.</p>
-        <p>A votação será aberta no dia... </p>
+        <p>A votação será aberta no dia 10 de fevereiro.</p>
         <table class="table table-bordered">
             <tr>
                 <td>Nome</td>

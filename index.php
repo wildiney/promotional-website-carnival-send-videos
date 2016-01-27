@@ -1,4 +1,7 @@
 <?php
+header('P3P: CP="IDC DSP COR CURa ADM ADMa DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT PHY ONL COM STA"');
+?>
+<?php
 /**
  * CodeIgniter
  *
@@ -53,7 +56,8 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+	define('ENVIRONMENT', 'production');
+	//define('ENVIRONMENT', 'production');
 
 /*
  *---------------------------------------------------------------

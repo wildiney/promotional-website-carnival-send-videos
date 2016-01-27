@@ -1,9 +1,15 @@
 <?php
-
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ *  Classe de login
+ */
 class Login extends CI_Controller {
 
+    /**
+     * Método Index
+     * Todas as páginas sem session redireciona para esta página.
+     */
     public function index() {
         if ($this->session->userdata('logged_in')) {
             redirect('concurso');
@@ -13,9 +19,12 @@ class Login extends CI_Controller {
             $this->load->view('footer');
         }
     }
-
+    
+    /**
+     * Método Logar
+     * Responsável por verificar login e senha e estabelecer as sessões da página
+     */
     public function logar() {
-
         if ($this->input->post()) {
             $data['matricula'] = $this->input->post('matricula');
             $data['nascimento'] = $this->input->post('nascimento');
@@ -34,13 +43,17 @@ class Login extends CI_Controller {
             if ($this->session->userdata('logged_in')) {
                 redirect('/concurso');
             } else {
-                redirect('/login');
+               redirect('/login');
             }
         } else {
             redirect('/login');
         }
     }
 
+    /**
+     * Método Logout
+     * Responsável por resetar todas as sessions e finalizar os acessos dos usuários do site.
+     */
     public function logout() {
         $this->session->unset_userdata('logged_in');
         $this->session->unset_userdata('usuario');
@@ -49,5 +62,4 @@ class Login extends CI_Controller {
         $this->session->sess_destroy();
         redirect('/', 'refresh');
     }
-
 }

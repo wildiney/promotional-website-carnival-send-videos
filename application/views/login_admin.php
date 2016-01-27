@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         $attr_label_size = "<div class='col-sm-9'>";
         $attr_label_size_close = "</div>";
 
-        echo form_open('admin/login/logar', $attr_form);
+        echo form_open('admlogin/logar', $attr_form);
 
         echo "<div class='row'>";
         echo form_label('LOGIN', 'login', $attr_label);

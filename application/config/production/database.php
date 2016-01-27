@@ -96,10 +96,10 @@ $db['default'] = array(
 );
 $db['production'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mysql.marchinhasdaindra.com.br',
-	'username' => 'marchinhasdaind',
-	'password' => 'IndraMkt@Marchinhas2016',
-	'database' => 'marchinhasdaindra',
+	'hostname' => 'localhost',
+	'username' => 'wildiney',
+	'password' => 'Wild@2510',
+	'database' => 'wildiney_marchinhasdaindra',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

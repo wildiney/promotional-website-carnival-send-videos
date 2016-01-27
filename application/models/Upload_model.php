@@ -32,6 +32,7 @@ class Upload_model extends CI_model {
     public function top($n){
         $this->db->select();
         $this->db->order_by('created_at','desc');
+        $this->db->where('approved','1');
         $this->db->limit($n);
         
         $query = $this->db->get('uploads');
