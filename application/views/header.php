@@ -23,18 +23,31 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-
     </head>
 
     <body>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-3109477-3', 'auto');
+            ga('send', 'pageview');
+        </script>
         <!--[if lt IE 8]>
             <p class="browserupgrade">Você está utilizando um browser <strong>desatualizado</strong>. Por favor <a href="http://browsehappy.com/">atualize seu browser</a> para assegurar a melhor experiência.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <?php
-        if ($this->session->userdata('logged_in')):
-            ?>
+<?php
+if ($this->session->userdata('logged_in')):
+    ?>
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -48,10 +61,10 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="<?php echo (uri_string() == base_url()) ? "active" : ""; ?>"><a href="/marchinhasdaindra"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
-                            <li class="<?php echo (uri_string() == "/upload") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/concurso/regulamento"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Regulamento</a></li>
-                            <li class="<?php echo (uri_string() == "/upload") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/upload"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Participar</a></li>
-                            <li class="<?php echo (uri_string() == "/contato") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/contato"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
+                            <li class="<?php echo (uri_string() == "concurso") ? "active" : ""; ?>"><a href="/marchinhasdaindra"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+                            <li class="<?php echo (uri_string() == "concurso/regulamento") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/concurso/regulamento"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Regulamento</a></li>
+                            <li class="<?php echo (uri_string() == "upload") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/upload"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Participar</a></li>
+                            <li class="<?php echo (uri_string() == "contato") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/contato"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class=""><a href="/marchinhasdaindra/index.php/login/logout">Logout</a></li>
@@ -59,7 +72,7 @@
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->
             </nav>
-        <?php endif; ?>
+<?php endif; ?>
         <div class="container">
             <div class="row">
                 <a href="<?php echo base_url(); ?>"><?php echo img('assets/img/header.jpg'); ?></a>
@@ -67,4 +80,3 @@
         </div>
         <div class="container">
             <div style="margin-left:20px; margin-right:20px;">
-
