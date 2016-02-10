@@ -27,7 +27,7 @@ class Admlogin extends CI_Controller {
             }
 
             if ($this->session->userdata('admin_logged')) {
-                redirect('/aprovacao');
+                redirect('/relatorio');
             } else {
                 redirect('/admlogin');
             }

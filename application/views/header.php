@@ -27,6 +27,7 @@
 
     <body>
         <script>
+            /*
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
                 i[r] = i[r] || function () {
@@ -41,6 +42,7 @@
 
             ga('create', 'UA-3109477-3', 'auto');
             ga('send', 'pageview');
+            */
         </script>
         <!--[if lt IE 8]>
             <p class="browserupgrade">Você está utilizando um browser <strong>desatualizado</strong>. Por favor <a href="http://browsehappy.com/">atualize seu browser</a> para assegurar a melhor experiência.</p>
@@ -63,7 +65,7 @@ if ($this->session->userdata('logged_in')):
                         <ul class="nav navbar-nav">
                             <li class="<?php echo (uri_string() == "concurso") ? "active" : ""; ?>"><a href="/marchinhasdaindra"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
                             <li class="<?php echo (uri_string() == "concurso/regulamento") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/concurso/regulamento"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Regulamento</a></li>
-                            <li class="<?php echo (uri_string() == "upload") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/upload"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> Participar</a></li>
+                            <li class="<?php echo (uri_string() == "videos") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/videos"><span style="text-transform:uppercase; font-weight: bold; color: #FFA401;"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Curta os vídeos!</span></a></li>
                             <li class="<?php echo (uri_string() == "contato") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/contato"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">

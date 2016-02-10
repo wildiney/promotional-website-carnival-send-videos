@@ -39,6 +39,17 @@ class Upload_model extends CI_model {
         
         return $query->result();
     }
+     
+    public function random($n){
+        $this->db->select();
+        $this->db->order_by('idupload','RANDOM');
+        $this->db->where('approved','1');
+        $this->db->limit($n);
+        
+        $query = $this->db->get('uploads');
+        
+        return $query->result();
+    }
 
     /**
      * FUNÇÃO SELECT TO APPROVE

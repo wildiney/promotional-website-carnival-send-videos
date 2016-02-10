@@ -20,7 +20,7 @@ class Concurso extends CI_Controller {
             redirect('/', 'refresh');
         }
         $this->load->model('upload_model');
-        $data['resultado'] = $this->upload_model->top(2);
+        $data['resultado'] = $this->upload_model->random(2);
 
         $this->load->view('header');
         $this->load->view('concurso', $data);

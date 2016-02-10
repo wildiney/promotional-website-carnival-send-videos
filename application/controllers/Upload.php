@@ -25,7 +25,15 @@ class Upload extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('header');
-		$this->load->view('form_upload',array('error'=>''));
+                
+                $date1 = date("Y-m-d");
+                $date2 = "2016-02-09";
+                
+                if(strtotime($date1) < strtotime($date2)){
+                    $this->load->view('form_upload',array('error'=>''));
+                } else {
+                    $this->load->view('prazoencerrado');
+                }
 		$this->load->view('footer');
 	}
         

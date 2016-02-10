@@ -17,11 +17,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         
     </div>
     <div class="col-md-4 col-md-offset-1">
+        <?php 
+        $date1 = date("Y-m-d");
+        $date2 = "2016-02-09";
+             
+        if(strtotime($date1) < strtotime($date2)):?>
         <div class="panel panel-default">
             <div class="panel-body">
                 <div style="text-align: center"><?php echo anchor('upload', 'ENVIAR MEU VÍDEO', array('class' => 'btn btn-success btn-lg')) ?></div>
             </div>
         </div>
+        <?php endif;?>
+        
         <?php if($resultado):?>
         <div class="panel panel-default">
             <div class="panel-heading">

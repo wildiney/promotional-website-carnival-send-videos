@@ -7,8 +7,6 @@ class Aprovacao extends CI_Controller {
         if(!$this->session->userdata('admin_logged')){
         	redirect('/admlogin','refresh');
         }
-        $this->output->enable_profiler(TRUE);
-
     }
 
     public function index() {
@@ -16,14 +14,14 @@ class Aprovacao extends CI_Controller {
         $data['resultado'] = $this->upload_model->selectToAprove();
        
         $this->load->view('header');
-        $this->load->view('admin/aprovacao',$data);
+        $this->load->view('aprovacao',$data);
         $this->load->view('footer');
     }
     
     public function aprovar($valor){
         $this->load->model('upload_model');
         if($this->upload_model->aprovar($valor)){
-            redirect('/marchinhasdaindra/aprovacao/');
+            redirect('/aprovacao');
         } else {
             die("Ih, deu ruim");
         }

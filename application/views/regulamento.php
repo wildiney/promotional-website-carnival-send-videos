@@ -60,7 +60,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li>CRIATIVIDADE: Originalidade no uso do tema proposto;</li>
                 </ul>
             <li>Será aberto um período para votação de todos os profissionais da Indra no seu vídeo preferido. O vídeo mais votado estará automaticamente na final do Concurso.</li>
-            <li>Será permitido 1 (um) voto por profissional.</li>
             <li>Os demais finalistas serão selecionados por membros da organização do concurso e profissionais convidados idôneos e serão orientados de acordo com os critérios mencionados anteriormente. </li>
             <li>Os vídeos finalistas serão apresentados à comissão julgadora, composta por membros da diretoria da Indra no Brasil, que terá plenos poderes para a definição do vídeo vencedor.  </li>
         </ul>
@@ -91,9 +90,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <p><strong style="text-transform: uppercase;">Caia na folia conosco!</strong></p>
     </div>
     <div class="col-md-4 col-md-offset-1">
+        <?php 
+        $date1 = date("Y-m-d");
+        $date2 = "2016-02-09";
+             
+        if(strtotime($date1) < strtotime($date2)):?>
         <div class="panel panel-default">
             <div class="panel-body">
                 <div style="text-align: center"><?php echo anchor('upload', 'ENVIAR MEU VÍDEO', array('class' => 'btn btn-success btn-lg')) ?></div>
             </div>
         </div>
+        <?php endif; ?>
     </div>
