@@ -38,3 +38,5 @@ system/application/cache/*
 
 application/config/development/
 application/config/production/
+
+*.env
