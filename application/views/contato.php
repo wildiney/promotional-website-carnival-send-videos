@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <strong>Erik Silva</strong><br />
             Marketing Brasil<br />
             <a href="tel:+551151863061">11 5186-3061</a><br />
-            <a href="mailto:communitybrasil@indracompany.com">communitybrasil@indracompany.com</a> </p>
+            <a href="mailto:">email@dominio.com</a> </p>
     </div>
     <div class="col-md-4 col-md-offset-1">
         <?php 

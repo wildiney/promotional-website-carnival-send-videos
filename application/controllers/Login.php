@@ -12,7 +12,7 @@ class Login extends CI_Controller {
      */
     public function index() {
         if ($this->session->userdata('logged_in')) {
-            redirect('concurso');
+            redirect('videos');
         } else {
             $this->load->view('header');
             $this->load->view('login');
@@ -41,7 +41,7 @@ class Login extends CI_Controller {
             }
 
             if ($this->session->userdata('logged_in')) {
-                redirect('/concurso');
+                redirect('/videos');
             } else {
                redirect('/login');
             }

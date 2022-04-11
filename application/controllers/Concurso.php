@@ -35,5 +35,11 @@ class Concurso extends CI_Controller {
         $this->load->view('regulamento');
         $this->load->view('footer');
     }
+    
+    public function encerramento(){
+        $this->load->view('header');
+        $this->load->view('encerramento');
+        $this->load->view('footer');
+    }
 
 }

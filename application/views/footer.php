@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <hr>
-        <p style="text-align: center;"><small>&copy 2016 - indracompany.com</small></p>
+        <p style="text-align: center;"><small>&copy 2016 - empresa.com</small></p>
     </div>
 </div>
 </div>

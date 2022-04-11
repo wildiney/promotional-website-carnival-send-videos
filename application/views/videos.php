@@ -9,13 +9,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         padding:0;
         background-color:transparent;
         border: none;
-        background-image: url("/marchinhasdaindra/assets/img/drum-pb.png");
+        background-image: url("/empresa/assets/img/drum-pb.png");
     }
     .votacao:hover{
-        background-image: url("/marchinhasdaindra/assets/img/drum.png");
+        background-image: url("/empresa/assets/img/drum.png");
     }
     .votado{
-        background-image: url("/marchinhasdaindra/assets/img/drum.png");
+        background-image: url("/empresa/assets/img/drum.png");
     }
 </style>
 <div class='row'>
@@ -41,7 +41,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 Grupo: <?php echo $videos->group; ?></small></p>
                                 
                                 <input type="hidden" name="id" value="<?php echo $videos->iduploads; ?>" /></td>
-                                <td style="width:80px;"><button class="votacao <?php echo (in_array($videos->iduploads,$array))?"votado":""; ?>"></button></td>
+                                <td style="width:80px;">
+                                    <?php 
+                                    $date1 = date("Y-m-d");
+                                    $date2 = "2016-02-15";
+                
+                                    if(strtotime($date1) < strtotime($date2)){?>
+                                    <button class="votacao <?php echo (in_array($videos->iduploads,$array))?"votado":""; ?>"></button>
+                                    <?php } else { ?>
+                                    <strong style="color:red; font-size: 0.8em; padding:0 10px 0 0;">VOTAÇÕES ENCERRADAS</strong>
+                                    <?php }?>
+                                </td>
                             </tr>
                         </table>
                     </div>    

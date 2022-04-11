@@ -89,14 +89,14 @@ $form .= form_close();
 
 <div class="row">
     <div class="col-md-12">
-        <h1>Concurso de Marchinhas Indra</h1>
+        <h1>Concurso de Marchinhas</h1>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
         <p>Antes de preencher seu cadastro e enviar seu vídeo, lembre-se:</p>
         <ul>
-            <li>Só é permitida a participação de funcionários da Indra</li>
+            <li>Só é permitida a participação de funcionários da Empresa</li>
             <li>A participação é limitada a somente um grupo/vídeo</li>
             <li>O vídeo deverá estar no formato: MP4.</li>
             <li>O tamanho máximo do vídeo é de 300MB e a sua duração não pode ser superior a 2 minutos.</li>

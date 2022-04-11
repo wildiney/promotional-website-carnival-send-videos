@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <div class="row">
     <div class="col-md-4 col-md-offset-4 alert alert-warning">
-        <p>Para ter acesso ao site você deve inserir abaixo a sua matrícula na Indra e a sua data de nascimento.</p>
+        <p>Para ter acesso ao site você deve inserir abaixo a sua matrícula na Empresa e a sua data de nascimento.</p>
     </div>
 </div>
 <div class="row">

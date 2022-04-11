@@ -5,15 +5,15 @@ header('P3P: CP="IDC DSP COR CURa ADM ADMa DEVi TAIi PSA PSD IVAi IVDi CONi HIS 
 @$pagina = $_GET['pagina'];
 if(isset($pagina)){
     if($pagina=="regulamento"){
-        $url = "http://wildiney.com/marchinhasdaindra/index.php/concurso/regulamento";
+        $url = "http://wildiney.com/marchinhasdaempresa/index.php/concurso/regulamento";
     }
 } else {
-    $url = "http://www.wildiney.com/marchinhasdaindra/";
+    $url = "http://www.wildiney.com/marchinhasdaempresa/";
 }
 ?>
 <html>
     <head>
-        <title>Marchinhas da Indra</title>
+        <title>Marchinhas da empresa</title>
         <style type="text/css">
             body{
                 margin:0;

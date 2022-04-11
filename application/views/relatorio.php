@@ -29,7 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <strong><?php echo $video->name; ?></strong><br>
                         <a href="mailto:<?php echo $video->email; ?>"><?php echo $video->email; ?></a><br>
                         Grupo: <?php echo $video->group; ?><br>
-                    <?php echo $video->participants; ?></p>
+                    <?php echo $video->participants; ?><br>
+                    <div style="padding:10px; background-color: #D0D0D0;"<?php echo nl2br($video->lyric); ?></div>
+                    </p>
                 </td>
                 
                 <td><?php echo $video->votos; ?></td>

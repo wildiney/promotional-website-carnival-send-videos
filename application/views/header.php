@@ -63,13 +63,13 @@ if ($this->session->userdata('logged_in')):
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="<?php echo (uri_string() == "concurso") ? "active" : ""; ?>"><a href="/marchinhasdaindra"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
-                            <li class="<?php echo (uri_string() == "concurso/regulamento") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/concurso/regulamento"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Regulamento</a></li>
-                            <li class="<?php echo (uri_string() == "videos") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/videos"><span style="text-transform:uppercase; font-weight: bold; color: #FFA401;"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Curta os vídeos!</span></a></li>
-                            <li class="<?php echo (uri_string() == "contato") ? "active" : ""; ?>"><a href="/marchinhasdaindra/index.php/contato"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
+                            <li class="<?php echo (uri_string() == "concurso") ? "active" : ""; ?>"><a href="/empresa"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Início</a></li>
+                            <li class="<?php echo (uri_string() == "concurso/regulamento") ? "active" : ""; ?>"><a href="/empresa/index.php/concurso/regulamento"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Regulamento</a></li>
+                            <li class="<?php echo (uri_string() == "videos") ? "active" : ""; ?>"><a href="/empresa/index.php/videos"><span style="text-transform:uppercase; font-weight: bold; color: #FFA401;"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span> Curta os vídeos!</span></a></li>
+                            <li class="<?php echo (uri_string() == "contato") ? "active" : ""; ?>"><a href="/empresa/index.php/contato"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contato</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li class=""><a href="/marchinhasdaindra/index.php/login/logout">Logout</a></li>
+                            <li class=""><a href="/empresa/index.php/login/logout">Logout</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div><!--/.container-fluid -->

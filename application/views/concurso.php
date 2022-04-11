@@ -4,16 +4,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class='row'>
     <div class="col-md-7">
         
-            <h1>Iº Concurso de<br />Marchinhas de Carnaval da Indra</h1>
+            <h1>Iº Concurso de<br />Marchinhas de Carnaval</h1>
             <p>O carnaval reúne milhares de pessoas nas ruas, nas passarelas do samba e em clubes de todos os cantos do país. Essa grande manifestação cultural está presente no Brasil há muitos anos e além de contar com a participação de diversos públicos é considerada uma das festas mais animadas e representativas do mundo. </p>
-            <p>Este ano, convidamos a todos os nossos profissionais do Brasil a entrar nesta folia conosco. Está aberto o <strong style="text-transform: uppercase;">Iº Concurso de Marchinhas de Carnaval da Indra no Brasil</strong>!</p>
-            <p>Componha, com criatividade e humor, uma Marchinha de Carnaval e compartilhe conosco através de um vídeo. Faça uma produção solo ou chame outros componentes e componha a sua marchinha de acordo com o tema: <strong style="text-transform: uppercase;">"O que eu faço na Indra?"</strong>. Use as soluções inovadoras que diariamente você usa para atender a suas demandas, junte com sua criatividade e uma pitada de humor e mostre seu samba nesta avenida!</p>
+            <p>Este ano, convidamos a todos os nossos profissionais do Brasil a entrar nesta folia conosco. Está aberto o <strong style="text-transform: uppercase;">Iº Concurso de Marchinhas de Carnaval da Empresa no Brasil</strong>!</p>
+            <p>Componha, com criatividade e humor, uma Marchinha de Carnaval e compartilhe conosco através de um vídeo. Faça uma produção solo ou chame outros componentes e componha a sua marchinha de acordo com o tema: <strong style="text-transform: uppercase;">"O que eu faço na Empresa?"</strong>. Use as soluções inovadoras que diariamente você usa para atender a suas demandas, junte com sua criatividade e uma pitada de humor e mostre seu samba nesta avenida!</p>
             <p>Todos os vídeos estarão disponíveis em nosso site e você poderá fazer parte do corpo de jurados votando em sua marchinha preferida.</p>
             <p>Veja as regras para participação: <?php echo anchor('concurso/regulamento', 'regulamento', 'Regulamento') ?></p>
             <p>&nbsp;</p>
             <p style="text-transform: uppercase;"><strong>Caia na folia conosco!</strong></p>
             <p>&nbsp;</p>
-            <p><strong>Comunicação Interna</strong><br>Indra no Brasil</p>
+            <p><strong>Comunicação Interna</strong><br>Empresa no Brasil</p>
         
     </div>
     <div class="col-md-4 col-md-offset-1">

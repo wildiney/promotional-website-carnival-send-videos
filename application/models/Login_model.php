@@ -41,7 +41,7 @@ class login_model extends CI_model {
     
     public function recover($email){
         $this->db->select('id, nome, email, senha');
-        $this->db->from('indra_boletim_usuarios');
+        $this->db->from('empresa_boletim_usuarios');
         $this->db->where('email',$email);
         $this->db->limit(1);
         

@@ -35,3 +35,6 @@ system/application/cache/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
+
+application/config/development/
+application/config/production
